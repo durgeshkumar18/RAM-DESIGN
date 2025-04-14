@@ -37,6 +37,9 @@ This project implements a simple **Synchronous RAM** in Verilog with support for
 
 ## How to Simulate
 
+iverilog -o ram_test tb_synchronous_ram.v synchronous_ram.v
+vvp ram_test
+
 ### Using Icarus Verilog:
 ```bash
 iverilog -o ram_test tb_synchronous_ram.v synchronous_ram.v
