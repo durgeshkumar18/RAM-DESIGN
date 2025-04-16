@@ -29,6 +29,8 @@ module tb_synchronous_ram;
 
     // Test Sequence
     initial begin
+        $dumpfile("dump.vcd");
+        $dumpvars(0, tb_sunchronous_ram)
         $display("Starting RAM simulation...");
         
         we = 1; addr = 4'h2; din = 8'hAA; #10; // Write 0xAA at address 2
